@@ -1,0 +1,40 @@
+{
+    "name": "saxulum/config-service-provider",
+    "description": "A config ServiceProvider for Pimple with support for php, json and yaml.",
+    "keywords": ["silex", "pimple"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Igor Wiedler",
+            "email": "igor@wiedler.ch"
+        },
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/igorw/ConfigServiceProvider/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3,<8.0",
+        "pimple/pimple": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*",
+        "symfony/yaml": "~2.2|~3.0",
+        "jamesmoss/toml": "~0.1"
+    },
+    "suggest": {
+        "symfony/yaml": "~2.2|~3.0",
+        "jamesmoss/toml": "~0.1"
+    },
+    "autoload": {
+        "psr-4": { "Igorw\\Silex\\": "src/Igorw/Silex/" }
+    },
+    "replace": {
+        "igorw/config-service-provider": "self.version"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}
